@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un dia en ¡Superate!</title>
+    <style>
+
+        h1{
+            font-size: 50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: purple 50px 10px 30px  ;
+            word-spacing: 10px;
+            text-decoration: overline underline;
+        }
+        body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+  background-color: rgb(28, 66, 104);
+	 background: url(bg.png), linear-gradient(90deg, hsl(210,40%,12%), hsl(210,40%,20%), hsl(210,40%,12%));
+	}
+
+.txt[contenteditable] {
+  outline: none;
+}
+
+/* Box ------------------------------------------------------ */
+
+#box {
+  padding: 50px;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+
+/* txt ------------------------------------------------------ */
+
+.txt {
+  color: hsla(0,0%,0%,0);
+  text-shadow: #fff 0 0 60px;
+  transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+	}
+	@-moz-document url-prefix() { .txt { text-shadow: #fff 0 0 20px; } } /* FF fix */
+
+#box:hover .txt {
+		text-shadow: #fff 0 0 5px;
+		transition: text-shadow 1s cubic-bezier(0, 0.75, 0, 1);
+}
+
+
+/* ♥ ------------------------------------------------------ */
+
+.♥ {
+  margin: 0 10px;
+  color: hsla(0,0%,0%,0);
+  text-shadow: red 0 0 5px;
+  transition: text-shadow 1s cubic-bezier(0, 1, 0, 1);
+	}
+
+#box:hover .♥ {
+		text-shadow: red 0 0 100px;
+		transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1);
+}
+  @-moz-document url-prefix() { #box:hover .♥ { text-shadow: red 0 0 20px; } } /* FF fix */
+    </style>
+</head>
+<body>
+    <pre style="color: white ;"> 
+    <h1> MI PRIMER THANKS GIVING </h1>
+   
+    Fue muy increible esa experiencia, ver a todos vestidos elegantes la convivencia y tambien como <span>cultura de otro pais.</span>
+    la covivencia y el significado del Thanks giving,
+    el poder convivir y <span>disfrutar en un contexto diferente</span>
+    ese dia fue un dia de mucho aprendizaje y significado 
+    Disfrute mucho la experiencioa 
+ 
+
+
+    </pre>
+    <div id="box">
+		<span class="txt">I</span>
+  <span class="♥">♥</span>
+  <span class="txt" contenteditable spellcheck="false">Miss Reina</span>
+</div>
+    
+</body>
+</html>
